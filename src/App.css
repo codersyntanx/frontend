@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+
+.listitem {
+  width: 350px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  background: #fff; 
+  transition: 2s; 
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.listitem:hover {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tabsbutton{
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  background-color: #7b95fe;
+  font-weight: bold;
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonnor{
+  background-color: #7b95fe;
+ padding: 8px;
+ border-radius: 8px;
+ color: #fff;
+ font-weight: bold;
+ border: none;
 }
+.buttonnor:hover{
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); 
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.activebtn{
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+}
+.tabsbutton:first-child{
+  border-radius:8px 0px 0px 8px ;
+}
+.tabsbutton:last-child{
+  border-radius:0px 8px 8px 0px ;
 }
